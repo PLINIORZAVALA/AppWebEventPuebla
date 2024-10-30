@@ -13,54 +13,33 @@
   </div>
   <div id="menucontainer">
     <div id="menunav">
-      <ul>
-        <li><a href="index.php" class="current"><span>Conciertos</span></a></li>
-        <li><a href="consultaInternauta.php" ><span>Teatros</span></a></li>
-        <li><a href="registro.php"><span>Deportes</span></a></li>
-        <li><a href="acceso.php"><span>Familiares</span></a></li>
-        <li><a href="contacto.php"><span>Especiales</span></a></li>
+    <ul>
+        <li><a href="F_conciertos.php"><span>Conciertos</span></a></li>
+        <li><a href="F_teatro.php" ><span>Teatros</span></a></li>
+        <li><a href="F_deporte.php"><span>Deportes</span></a></li>
+        <li><a href="F_familiares.php"><span>Familiares</span></a></li>
+        <li><a href="F_especiales.php" class="current"><span>Especiales</span></a></li>
         <li><a href="#"><span>Todos</span></a></li>
       </ul>
     </div>
   </div>
   <div id="container">
     <div id="content">
-      <h3>Consulta de peliculas</h3>
+      <h3>Especiales</h3>
+      <p>Elaborador por:</p>
+      <p>Pedro Bello L&oacute;pez</p>
+      <p>pedro.bello@correo.buap.mx</p>
       <p>&nbsp;</p>
-      <p>
-	  <?PHP
-$link=mysqli_connect("localhost","root","");
-mysqli_select_db($link,"vidioteca");
-$resultado=mysqli_query($link,"select * from pelicula");
-echo "<table border='1'>";
-echo"<TR><TD>ID pelicula</TD><TD>Titulo</TD><TD>Director</TD><TD>Actor</TD>
-     <TD>Imagen</TD></TR>";
-while($ren=mysqli_fetch_array($resultado))
-{
-  $id=$ren['id_pelicula'];
-  $ti=$ren['titulo'];
-  $di=$ren['director'];
-  $ac=$ren['actor'];
-  $im=$ren['imagen'];
-  echo"<TR><TD>$id</TD><TD>$ti</TD><TD>$di</TD><TD>$ac</TD>
-  <TD><A href='consultaInternauta2.php?id_peli=$id'>
-     <img src='MisImagenes/$im' width='70' height='70'> </A> </TD></TR>";
-}
-echo "</table>";
-mysqli_close($link);
-?>
-
-	  
-	  
-	  
-	  &nbsp;</p>
+      <p>&nbsp;</p>
+      <p>Que disfrutes de las peliculas...</p>
+      <p>&nbsp;</p>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
       <p>.</p>
     </div>
-    </div>
+  </div>
   <div id="footer"> <a href="#">Registrase</a> | <a href="mailto:denise@mitchinson.net">Iniciar Sesión</a> | <a href="http://validator.w3.org/check?uri=referer">html</a> | <a href="http://jigsaw.w3.org/css-validator">css</a> | &copy; 2007 Anyone | Design by <a href="http://www.mitchinson.net"> www.mitchinson.net</a></div>
 </div>
 </body>

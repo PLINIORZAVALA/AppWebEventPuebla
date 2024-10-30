@@ -14,23 +14,20 @@
   <div id="menucontainer">
     <div id="menunav">
       <ul>
-        <li><a href="index.php" class="current"><span>Conciertos</span></a></li>
-        <li><a href="consultaInternauta.php" ><span>Teatros</span></a></li>
-        <li><a href="registro.php"><span>Deportes</span></a></li>
-        <li><a href="acceso.php"><span>Familiares</span></a></li>
-        <li><a href="contacto.php"><span>Especiales</span></a></li>
+        <li><a href="F_conciertos.php" class="current"><span>Conciertos</span></a></li>
+        <li><a href="F_teatro.php" ><span>Teatros</span></a></li>
+        <li><a href="F_deporte.php"><span>Deportes</span></a></li>
+        <li><a href="F_familiares.php"><span>Familiares</span></a></li>
+        <li><a href="F_especiales.php"><span>Especiales</span></a></li>
         <li><a href="#"><span>Todos</span></a></li>
       </ul>
     </div>
   </div>
   <div id="container">
     <div id="content">
-      <h3>Contacto</h3>
-      <p>Elaborador por:</p>
-      <p>Pedro Bello L&oacute;pez</p>
-      <p>pedro.bello@correo.buap.mx</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
+      <h3>Conciertos</h3>
+      <p>Esta pagina provee de las peliculas nacionales e internacionales de mayor exito en taquillas. Te invitamos a ser parte de este sistema registrando tus datos en la opci&oacute;n de &quot;Registro&quot;.</p>
+      <p><img src="MisImagenes/imagen5.jpg" width="81" height="125" /> <img src="MisImagenes/imagen2.jpg" width="95" height="124" /> <img src="MisImagenes/imagen6.jpg" width="101" height="124" /></p>
       <p>Que disfrutes de las peliculas...</p>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
