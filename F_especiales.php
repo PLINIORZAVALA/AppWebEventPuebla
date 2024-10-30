@@ -9,7 +9,7 @@
 <div id="wrap">
   <div id="masthead">
     <h1>Eventos Puebla </h1>
-    <h2><a href="index.php">Registrarse</a> | <a href="contacto.php">Iniciar Sesión</a> </h2>
+    <h2><a href="registro.php">Registrarse</a> | <a href="sesion.php">Iniciar Sesión</a> </h2>
   </div>
   <div id="menucontainer">
     <div id="menunav">
