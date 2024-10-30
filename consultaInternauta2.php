@@ -14,11 +14,12 @@
   <div id="menucontainer">
     <div id="menunav">
       <ul>
-        <li><a href="index.php" class="current"><span>Inicio</span></a></li>
-        <li><a href="consultaInternauta.php" ><span>Consulta</span></a></li>
-        <li><a href="registro.php"><span>Registro</span></a></li>
-        <li><a href="acceso.php"><span>Acceso</span></a></li>
-        <li><a href="contacto.php"><span>Contacto</span></a></li>
+        <li><a href="index.php" class="current"><span>Conciertos</span></a></li>
+        <li><a href="consultaInternauta.php" ><span>Teatros</span></a></li>
+        <li><a href="registro.php"><span>Deportes</span></a></li>
+        <li><a href="acceso.php"><span>Familiares</span></a></li>
+        <li><a href="contacto.php"><span>Especiales</span></a></li>
+        <li><a href="#"><span>Todos</span></a></li>
       </ul>
     </div>
   </div>

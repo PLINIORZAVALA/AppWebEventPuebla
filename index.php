@@ -19,7 +19,7 @@
         <li><a href="registro.php"><span>Deportes</span></a></li>
         <li><a href="acceso.php"><span>Familiares</span></a></li>
         <li><a href="contacto.php"><span>Especiales</span></a></li>
-        <li><a href="contacto.php"><span>Todos</span></a></li>
+        <li><a href="#"><span>Todos</span></a></li>
       </ul>
     </div>
   </div>
