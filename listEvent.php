@@ -1,9 +1,9 @@
 <html>
 <head>
-    <title>Consulta de Adopciones</title>
+    <title>Consulta de eventos</title>
 </head>
 <body>
-    <h2>Lista de Mascotas para Adopción</h2>
+    <h2>Lista de datos del evento</h2>
     <hr>
     <?php
     $link = mysqli_connect("localhost", "root", "", "event");
