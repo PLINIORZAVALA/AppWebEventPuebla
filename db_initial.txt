@@ -1,0 +1,72 @@
+-- Crear base de datos
+DROP DATABASE IF EXISTS eventos_lugar;
+CREATE DATABASE eventos_lugar;
+USE eventos_lugar;
+
+-- Tabla de Usuarios
+DROP TABLE IF EXISTS usuarios;
+CREATE TABLE usuarios (
+  id_usuario INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(64) NOT NULL,
+  email VARCHAR(128) NOT NULL UNIQUE,
+  contrasena VARCHAR(128) NOT NULL,
+  tipo_usuario ENUM('visitante', 'organizador', 'administrador') NOT NULL,
+  fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Tabla de Eventos
+DROP TABLE IF EXISTS eventos;
+CREATE TABLE eventos (
+  id_evento INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  titulo VARCHAR(128) NOT NULL,
+  descripcion TEXT NOT NULL,
+  fecha_evento DATE NOT NULL,
+  hora_evento TIME NOT NULL,
+  ubicacion VARCHAR(128) NOT NULL,
+  id_organizador INT NOT NULL,
+  estado ENUM('pendiente', 'aprobado', 'rechazado') DEFAULT 'pendiente',
+  fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (id_organizador) REFERENCES usuarios(id_usuario)
+);
+
+-- Tabla de Administración de Eventos (para registros de aprobación o rechazo de eventos)
+DROP TABLE IF EXISTS administracion_eventos;
+CREATE TABLE administracion_eventos (
+  id_administracion INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  id_evento INT NOT NULL,
+  id_admin INT NOT NULL,
+  estado ENUM('aprobado', 'rechazado') NOT NULL,
+  fecha_revision TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  comentario_admin TEXT,
+  FOREIGN KEY (id_evento) REFERENCES eventos(id_evento),
+  FOREIGN KEY (id_admin) REFERENCES usuarios(id_usuario)
+);
+
+-- Insertar algunos usuarios de ejemplo
+INSERT INTO usuarios (nombre, email, contrasena, tipo_usuario) VALUES
+('Ana Visitante', 'ana@example.com', 'password123', 'visitante'),
+('Carlos Organizador', 'carlos@example.com', 'password123', 'organizador'),
+('Luis Administrador', 'luis@example.com', 'password123', 'administrador');
+
+-- Insertar algunos eventos de ejemplo (estado 'pendiente')
+INSERT INTO eventos (titulo, descripcion, fecha_evento, hora_evento, ubicacion, id_organizador) VALUES
+('Concierto de Rock', 'Una noche de rock en vivo con bandas locales.', '2024-12-15', '20:00:00', 'Auditorio Central', 2),
+('Exposición de Arte', 'Muestra de arte contemporáneo.', '2024-11-10', '18:00:00', 'Sala de Exposiciones', 2);
+
+-- Aprobar o rechazar un evento por un administrador
+-- Ejemplo de aprobación
+INSERT INTO administracion_eventos (id_evento, id_admin, estado, comentario_admin) VALUES
+(1, 3, 'aprobado', 'Evento aprobado para el próximo mes.');
+-- Ejemplo de rechazo
+INSERT INTO administracion_eventos (id_evento, id_admin, estado, comentario_admin) VALUES
+(2, 3, 'rechazado', 'El evento no cumple con los requisitos.');
+
+-- ACTUALIZACIONES DE LA BASE DE datos
+
+-- TABLE -> usuarios
+   -- Añadimos una nueva columna
+        ALTER TABLE eventos ADD COLUMN imagen VARCHAR(64);
+    -- completamos los datos bacios
+         UPDATE eventos SET imagen = 'imagen2' WHERE imagen = 'imagen1' and id_event = 2;
+    
+    
