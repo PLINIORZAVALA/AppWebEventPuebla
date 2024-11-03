@@ -63,10 +63,14 @@ INSERT INTO administracion_eventos (id_evento, id_admin, estado, comentario_admi
 
 -- ACTUALIZACIONES DE LA BASE DE datos
 
--- TABLE -> usuarios
+-- TABLE -> eventos
    -- Añadimos una nueva columna
         ALTER TABLE eventos ADD COLUMN imagen VARCHAR(64);
     -- completamos los datos bacios
          UPDATE eventos SET imagen = 'imagen2' WHERE imagen = 'imagen1' and id_event = 2;
-    
-    
+    -- Añademos una nueva columan de tipo_evento
+        ALTER TABLE eventos ADD COLUMN tipo_event VARCHAR(64);
+    -- Completamos los datos bacios 
+        UPDATE eventos SET tipo_event = "concierto" WHERE tipo_event IS NULL and id_event = 1;
+        UPDATE eventos SET tipo_event = "familiares" WHERE tipo_event IS NULL and id_event = 2;
+    -- 
