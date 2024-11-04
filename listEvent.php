@@ -38,7 +38,7 @@
         $fechEv = $reg['fecha_evento'];
         $hoEv = $reg['hora_evento'];
         $ubi = $reg['ubicacion'];
-        $id_O = $reg['id_organizador'];
+        $id_O = $reg['id_usuario'];
         $est = $reg['estado'];
         $fechC = $reg['fecha_creacion'];
         $tiE = $reg['tipo_event'];

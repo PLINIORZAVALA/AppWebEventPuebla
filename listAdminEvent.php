@@ -29,7 +29,7 @@
     while ($reg = mysqli_fetch_array($resultado)) {
         $id_adm = $reg['id_administracion'];
         $id_ev = $reg['id_evento'];
-        $id_admin = $reg['id_admin'];
+        $id_admin = $reg['id_user'];
         $estado = $reg['estado'];
         $fecha_rev = $reg['fecha_revision'];
         $comentario = $reg['comentario_admin'];
