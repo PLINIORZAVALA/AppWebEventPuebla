@@ -25,7 +25,7 @@
   </div>
   <div id="container">
     <div id="content">
-      <h3>Familiares</h3>
+      <h3>Bienvenido internauta</h3>
       <p>&nbsp;</p>
       <p></p>
 

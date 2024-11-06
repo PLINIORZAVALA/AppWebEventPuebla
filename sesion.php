@@ -14,7 +14,7 @@
         </div>
         <div class="form-panel">
             <h2>Iniciar Sesión</h2>
-            <form action="procesar_sesion.php" method="POST">
+            <form action="validarUsuario.php" method="POST">
                 <div class="form-group">
                     <label for="email">Correo Electrónico</label>
                     <input type="email" id="email" name="email" required>
@@ -29,7 +29,7 @@
                 </div>
                 <button class="submit-btn" type="submit">Iniciar sesión</button>
                 <div class="form-footer">
-                    <p>¿Nuevo en Ticketmaster? <a href="registro.php">Crea una cuenta</a></p>
+                    <p>¿Nuevo en Ticketmaster? <a href="#">Crea una cuenta</a></p>
                     <p><a href="#">Olvidé mi contraseña</a></p>
                 </div>
             </form>
