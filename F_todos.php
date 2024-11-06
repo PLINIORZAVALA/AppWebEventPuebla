@@ -19,7 +19,7 @@
         <li><a href="F_deporte.php"><span>Deportes</span></a></li>
         <li><a href="F_familiares.php" class="current"><span>Familiares</span></a></li>
         <li><a href="F_especiales.php"><span>Especiales</span></a></li>
-        <li><a href="F_todos.php"><span>Todos</span></a></li>
+        <li><a href="F_todos.php" class="current"><span>Todos</span></a></li>
       </ul>
     </div>
   </div>
