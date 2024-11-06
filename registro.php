@@ -14,7 +14,7 @@
         </div>
         <div class="form-panel">
             <h2>Registrarse</h2>
-            <form action="procesar_registro.php" method="POST">
+            <form action="InsertUser.php" method="POST">
                 <div class="form-group">
                     <label for="register-email">Correo Electrónico</label>
                     <input type="email" id="register-email" name="email" required>
@@ -31,33 +31,10 @@
                     <label for="last-name">Apellido</label>
                     <input type="text" id="last-name" name="last_name" required>
                 </div>
-                <div class="form-group">
-                    <label for="country">País</label>
-                    <select id="country" name="country">
-                        <option value="México">México</option>
-                        <option value="Japón">Japón</option>
-                        <!-- Agrega otros países aquí -->
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="zip">Código Postal</label>
-                    <input type="text" id="zip" name="zip" required>
-                </div>
-                <div class="form-group">
-                    <label for="language">Idioma Preferido</label>
-                    <select id="language" name="language">
-                        <option value="Español">Español</option>
-                        <!-- Agrega otros idiomas aquí -->
-                    </select>
-                </div>
-                <div class="checkbox-group">
-                    <input type="checkbox" id="promo" name="promo">
-                    <label for="promo">Descubre lo que se avecina - promociones, boletos, etc.</label>
-                </div>
                 <button class="submit-btn" type="submit">Siguiente</button>
                 <div class="form-footer">
                     <p>Al continuar, aceptas los <a href="#">términos</a> y la <a href="#">Política de Privacidad</a>.</p>
-                    <p>¿Ya tienes cuenta? <a href="sesion.php">Inicia sesión</a></p>
+                    <p>¿Ya tienes cuenta? <a href="#">Inicia sesión</a></p>
                 </div>
             </form>
         </div>
