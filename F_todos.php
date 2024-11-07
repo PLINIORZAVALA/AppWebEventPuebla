@@ -100,6 +100,7 @@
             $hora_evento = $ren['hora_evento'];
             $ubicacion = $ren['ubicacion'];
             $imagen = $ren['imagen'];
+            $tipo_event = $ren['tipo_event'];
             
             echo "<div class='event-card' style='border: 1px solid #ddd; padding: 10px; width: 200px; margin: 10px; display: inline-block; text-align: center;'>";
             echo "<img src='MisImagenes/$imagen' alt='Imagen del evento' style='width: 100%; height: auto;'>";
