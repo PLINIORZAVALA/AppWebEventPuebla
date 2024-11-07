@@ -57,8 +57,8 @@
             $imagen = $ren['imagen'];
             $tipo_event = $ren['tipo_event'];
             
-            echo "<div class='event-card' style='border: 1px solid #ddd; padding: 10px; width: 200px; margin: 10px; display: inline-block; text-align: center;'>";
-            echo "<img src='MisImagenes/$imagen' alt='Imagen del evento' style='width: 100%; height: auto;'>";
+            echo "<div class='event-card' style='border: 1px solid #d; padding: 10px; width: 200px; margin: 10px; display: inline-block; text-align: center;'>";
+            echo "<img src='MisImagenes/$imagen' alt='Imagen del evento' style='width: 175px; height: 150px;'>";
             echo "<div class='event-info'>";
             echo "<p class='event-title' style='font-weight: bold;'>$titulo</p>";
             echo "<p class='event-description'>$descripcion</p>";
