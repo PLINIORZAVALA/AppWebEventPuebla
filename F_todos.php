@@ -25,7 +25,7 @@
   </div>
   <div id="container">
     <div id="content">
-      <h3>Familiares</h3>
+      <h3>Todos los eventos</h3>
       <p>&nbsp;</p>
       <p></p>
 
@@ -40,52 +40,6 @@
         if (!$resultado) {
             die('Error en la consulta: ' . mysqli_error($link));
         }
-
-        // Mostrar datos en una tabla
-        echo "<table border='1'>";
-        echo "<tr>
-                <th>ID Evento</th>
-                <th>Título</th>
-                <th>Descripción</th>
-                <th>Fecha del Evento</th>
-                <th>Hora del Evento</th>
-                <th>Ubicación</th>
-                <th>ID Usuario</th>
-                <th>Estado</th>
-                <th>Fecha de Creación</th>
-                <th>Tipo de Evento</th>
-                <th>Imagen</th>
-              </tr>";
-
-        while ($ren = mysqli_fetch_array($resultado)) {
-            $id_event = $ren['id_event'];
-            $titulo = $ren['titulo'];
-            $descripcion = $ren['descripcion'];
-            $fecha_evento = $ren['fecha_evento'];
-            $hora_evento = $ren['hora_evento'];
-            $ubicacion = $ren['ubicacion'];
-            $id_usuario = $ren['id_usuario'];
-            $estado = $ren['estado'];
-            $fecha_creacion = $ren['fecha_creacion'];
-            $tipo_event = $ren['tipo_event'];
-            $imagen = $ren['imagen'];
-
-            echo "<tr>";
-            echo "<td>$id_event</td>
-                  <td>$titulo</td>
-                  <td>$descripcion</td>
-                  <td>$fecha_evento</td>
-                  <td>$hora_evento</td>
-                  <td>$ubicacion</td>
-                  <td>$id_usuario</td>
-                  <td>$estado</td>
-                  <td>$fecha_creacion</td>
-                  <td>$tipo_event</td>";
-            echo "<td><a href='detalle_evento.php?id_event=$id_event'><img src='MisImagenes/$imagen' width='70' height='70'></a></td>";
-            echo "</tr>";
-        }
-
-        echo "</table>";
 
         // Mostrar los datos en formato de tarjeta
         echo "<h2>Vista de Tarjetas de Eventos</h2>";
