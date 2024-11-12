@@ -8,13 +8,12 @@
 <body>
 <div id="wrap">
   <div id="masthead">
-    <h1>Eventos Puebla </h1>
-    <h2><a href="registro.php">Registrarse</a> | <a href="sesion.php">Iniciar Sesión</a> </h2>
+    <h1>Bienvenido Administrador </h1>
   </div>
   <div id="menucontainer">
     <div id="menunav">
-    <ul>
-        <li><a href="G_conciertos.php"><span>Conciertos</span></a></li>
+      <ul>
+        <li><a href="G_conciertos.php" class="current"><span>Conciertos</span></a></li>
         <li><a href="G_teatro.php" ><span>Teatros</span></a></li>
         <li><a href="G_deporte.php"><span>Deportes</span></a></li>
         <li><a href="G_familiares.php"><span>Familiares</span></a></li>
@@ -22,16 +21,15 @@
         <li><a href="G_todos.php"><span>Todos</span></a></li>
         <li><a href="G_altaRegistro.php"><span>Permiso Eventos</span></a></li>
         <li><a href="G_users.php"><span>Usuarios</span></a></li>
-        
       </ul>
     </div>
   </div>
   <div id="container">
     <div id="content">
-      <h3>Bienvenido administrador</h3>
+      <h3>Conciertos</h3>
       <p>&nbsp;</p>
       <p></p>
-
+      
       <?php
         $link = mysqli_connect("localhost", "root", "", "event");
 
@@ -39,56 +37,11 @@
             die('Error de conexión: ' . mysqli_connect_error());
         }
 
-        $resultado = mysqli_query($link, "SELECT * FROM eventos");
+        $resultado = mysqli_query($link, "SELECT * FROM eventos WHERE tipo_event = 'concierto'");
+
         if (!$resultado) {
             die('Error en la consulta: ' . mysqli_error($link));
         }
-
-        // Mostrar datos en una tabla
-        echo "<table border='1'>";
-        echo "<tr>
-                <th>ID Evento</th>
-                <th>Título</th>
-                <th>Descripción</th>
-                <th>Fecha del Evento</th>
-                <th>Hora del Evento</th>
-                <th>Ubicación</th>
-                <th>ID Usuario</th>
-                <th>Estado</th>
-                <th>Fecha de Creación</th>
-                <th>Tipo de Evento</th>
-                <th>Imagen</th>
-              </tr>";
-
-        while ($ren = mysqli_fetch_array($resultado)) {
-            $id_event = $ren['id_event'];
-            $titulo = $ren['titulo'];
-            $descripcion = $ren['descripcion'];
-            $fecha_evento = $ren['fecha_evento'];
-            $hora_evento = $ren['hora_evento'];
-            $ubicacion = $ren['ubicacion'];
-            $id_usuario = $ren['id_usuario'];
-            $estado = $ren['estado'];
-            $fecha_creacion = $ren['fecha_creacion'];
-            $tipo_event = $ren['tipo_event'];
-            $imagen = $ren['imagen'];
-
-            echo "<tr>";
-            echo "<td>$id_event</td>
-                  <td>$titulo</td>
-                  <td>$descripcion</td>
-                  <td>$fecha_evento</td>
-                  <td>$hora_evento</td>
-                  <td>$ubicacion</td>
-                  <td>$id_usuario</td>
-                  <td>$estado</td>
-                  <td>$fecha_creacion</td>
-                  <td>$tipo_event</td>";
-            echo "<td><a href='detalle_evento.php?id_event=$id_event'><img src='MisImagenes/$imagen' width='70' height='70'></a></td>";
-            echo "</tr>";
-        }
-
-        echo "</table>";
 
         // Mostrar los datos en formato de tarjeta
         echo "<h2>Vista de Tarjetas de Eventos</h2>";
@@ -103,9 +56,10 @@
             $hora_evento = $ren['hora_evento'];
             $ubicacion = $ren['ubicacion'];
             $imagen = $ren['imagen'];
+            $tipo_event = $ren['tipo_event'];
             
-            echo "<div class='event-card' style='border: 1px solid #ddd; padding: 10px; width: 200px; margin: 10px; display: inline-block; text-align: center;'>";
-            echo "<img src='MisImagenes/$imagen' alt='Imagen del evento' style='width: 100%; height: auto;'>";
+            echo "<div class='event-card' style='border: 1px solid #d; padding: 10px; width: 200px; margin: 10px; display: inline-block; text-align: center;'>";
+            echo "<img src='MisImagenes/$imagen' alt='Imagen del evento' style='width: 175px; height: 150px;'>";
             echo "<div class='event-info'>";
             echo "<p class='event-title' style='font-weight: bold;'>$titulo</p>";
             echo "<p class='event-description'>$descripcion</p>";
@@ -120,7 +74,6 @@
       ?>
 
 
-
       <p>&nbsp;</p>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
@@ -129,7 +82,7 @@
       <p>.</p>
     </div>
   </div>
-  <div id="footer"> <a href="#">homepage</a> | <a href="mailto:denise@mitchinson.net">contact</a> | <a href="http://validator.w3.org/check?uri=referer">html</a> | <a href="http://jigsaw.w3.org/css-validator">css</a> | &copy; 2007 Anyone | Design by <a href="http://www.mitchinson.net"> www.mitchinson.net</a></div>
+  <div id="footer"> <a href="#">Registrase</a> | <a href="mailto:denise@mitchinson.net">Iniciar Sesión</a> | <a href="http://validator.w3.org/check?uri=referer">html</a> | <a href="http://jigsaw.w3.org/css-validator">css</a> | &copy; 2007 Anyone | Design by <a href="http://www.mitchinson.net"> www.mitchinson.net</a></div>
 </div>
 </body>
 </html>

@@ -8,25 +8,25 @@
 <body>
 <div id="wrap">
   <div id="masthead">
-    <h1>Eventos Puebla </h1>
-    <h2><a href="registro.php">Registrarse</a> | <a href="sesion.php">Iniciar Sesión</a> </h2>
+    <h1>Bienvenido Administrador </h1>
   </div>
   <div id="menucontainer">
     <div id="menunav">
     <ul>
-        <li><a href="F_conciertos.php"><span>Conciertos</span></a></li>
-        <li><a href="F_teatro.php" ><span>Teatros</span></a></li>
-        <li><a href="F_deporte.php"><span>Deportes</span></a></li>
-        <li><a href="F_familiares.php" class="current"><span>Familiares</span></a></li>
-        <li><a href="F_especiales.php"><span>Especiales</span></a></li>
-        <li><a href="F_todos.php" class="current"><span>Todos</span></a></li>
-        
+        <li><a href="G_conciertos.php"><span>Conciertos</span></a></li>
+        <li><a href="G_teatro.php" ><span>Teatros</span></a></li>
+        <li><a href="G_deporte.php"><span>Deportes</span></a></li>
+        <li><a href="G_familiares.php" class="current"><span>Familiares</span></a></li>
+        <li><a href="G_especiales.php"><span>Especiales</span></a></li>
+        <li><a href="G_todos.php"><span>Todos</span></a></li>
+        <li><a href="G_altaRegistro.php"><span>Permiso Eventos</span></a></li>
+        <li><a href="G_users.php" class="current"><span>Usuarios</span></a></li>
       </ul>
     </div>
   </div>
   <div id="container">
     <div id="content">
-      <h3>Bienvenido internauta</h3>
+      <h3>Familiares</h3>
       <p>&nbsp;</p>
       <p></p>
 
@@ -101,9 +101,10 @@
             $hora_evento = $ren['hora_evento'];
             $ubicacion = $ren['ubicacion'];
             $imagen = $ren['imagen'];
+            $tipo_event = $ren['tipo_event'];
             
             echo "<div class='event-card' style='border: 1px solid #ddd; padding: 10px; width: 200px; margin: 10px; display: inline-block; text-align: center;'>";
-            echo "<img src='MisImagenes/$imagen' alt='Imagen del evento' style='width: 100%; height: auto;'>";
+            echo "<img src='MisImagenes/$imagen' alt='Imagen del evento' style='width: 175px; height: 150px;'>";
             echo "<div class='event-info'>";
             echo "<p class='event-title' style='font-weight: bold;'>$titulo</p>";
             echo "<p class='event-description'>$descripcion</p>";
