@@ -1,3 +1,5 @@
 12/11/24
  - Se realizara el avance de los permiso que debe de tener como administrador de los accesos de datos que tendra
- - Para la proxima sesion anadir las funciones de CRUD al administrador y para la proxima el registro de eventos
+ - Para la proxima sesion añadir las funciones de CRUD al administrador y para la proxima el registro de eventos
+ - Los botones ya dan la ruta pero no esta eliminando ni mostrando para actualizar
+ - 

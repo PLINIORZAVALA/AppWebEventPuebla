@@ -34,8 +34,8 @@ else return false ;
 
   while($row = mysqli_fetch_array($result)) 
   { 
-    $ti=$row["titulo"];
-    $di=$row["director"];
+   $ti=$row["titulo"];
+   $di=$row["director"];
 	$id=$row["id_pelicula"];
     printf("<tr><td>%d</td><td>%s</td><td>%s</td>
 	       <td><center>
