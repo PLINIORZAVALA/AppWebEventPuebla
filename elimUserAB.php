@@ -76,7 +76,7 @@
                         </center>
                     </td>
                     <td><center>
-                        <a href=\"actuUsuario.php?id_usuario=$id_usuario\"><img src='actualiza.jpg' width='25' height='25' border='0'></a>
+                        <a href=\"actuUsernew.php?id_usuario=$id_usuario\"><img src='actualiza.jpg' width='25' height='25' border='0'></a>
                         </center>
                     </td>
                   </tr>";
