@@ -23,8 +23,8 @@
     <div id="menunav">
       <ul>
         <li><a href="elimEventoAB.php" class="current"><span>Eventos</span></a></li>
-        <li><a href="G_altaRegistro.php"><span>Permiso Eventos</span></a></li>
-        <li><a href="G_users.php"><span>Usuarios</span></a></li>
+        <li><a href="#"><span>Permiso Eventos</span></a></li>
+        <li><a href="#"><span>Usuarios</span></a></li>
       </ul>
     </div>
   </div>
