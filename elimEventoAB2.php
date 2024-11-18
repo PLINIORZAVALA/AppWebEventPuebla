@@ -21,7 +21,7 @@ if (isset($_GET['id_event']) && is_numeric($_GET['id_event'])) {
     $query = "DELETE FROM eventos WHERE id_event = '$id'";
     if (mysqli_query($link, $query)) {
         // Redirigir después de la eliminación
-        header("Location: elimConciertosAB.php");
+        header("Location: elimEventoAB.php");
         exit();
     } else {
         echo "Error al eliminar el registro: " . mysqli_error($link);

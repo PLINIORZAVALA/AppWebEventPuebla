@@ -39,7 +39,7 @@ WHERE id_event = '$id'";
 
 if (mysqli_query($link, $query)) {
     // Redirigir al usuario a otra página después de la actualización
-    header("Location: elimConciertosAB.php");
+    header("Location: elimEventoAB.php");
     exit();  // Importante para detener el script después de la redirección
 } else {
     echo "Error al actualizar el registro: " . mysqli_error($link);

@@ -7,6 +7,7 @@
 </head>
 <body>
 
+
 <h2>Actualizar un registro</h2> 
 
 <div id="wrap">
@@ -48,7 +49,7 @@ $result = mysqli_stmt_get_result($stmt);
 
 // Verificar si se obtuvo un resultado
 if ($ren = mysqli_fetch_assoc($result)) {
-    echo '<form method="POST" action="actuConciertonew2.php">';
+    echo '<form method="POST" action="actuEvento2.php">';
     echo "Título: <input type='text' name='titulo' value='" . htmlspecialchars($ren['titulo']) . "' size='50'><br>";
     echo "Descripción: <input type='text' name='descripcion' value='" . htmlspecialchars($ren['descripcion']) . "' size='50'><br>";
     echo "Fecha del evento: <input type='text' name='fecha_evento' value='" . htmlspecialchars($ren['fecha_evento']) . "' size='50'><br>";

@@ -15,19 +15,14 @@
 </head>
 <body>
 
-<h2>Eliminación de Registros en la tabla Película</h2> 
+<h1> Bienvenido adminitrador</h1> 
 
 <div id="wrap">
   <div id="masthead"></div>
   <div id="menucontainer">
     <div id="menunav">
       <ul>
-        <li><a href="G_conciertos.php" class="current"><span>Conciertos</span></a></li>
-        <li><a href="G_teatro.php"><span>Teatros</span></a></li>
-        <li><a href="G_deporte.php"><span>Deportes</span></a></li>
-        <li><a href="G_familiares.php"><span>Familiares</span></a></li>
-        <li><a href="G_especiales.php"><span>Especiales</span></a></li>
-        <li><a href="G_todos.php"><span>Todos</span></a></li>
+        <li><a href="elimEventoAB.php" class="current"><span>Eventos</span></a></li>
         <li><a href="G_altaRegistro.php"><span>Permiso Eventos</span></a></li>
         <li><a href="G_users.php"><span>Usuarios</span></a></li>
       </ul>
@@ -35,7 +30,7 @@
   </div>
   <div id="container">
     <div id="content">
-      <h3>Conciertos</h3>
+      <h3>Administracion de todos los eventos</h3>
 
       <?php
         $link = mysqli_connect("localhost", "root", "", "event");
@@ -97,11 +92,11 @@
 
                     
                     <td><center>
-                    <a onclick=\"return confirmSubmit()\"href=\"elimConciertosAB2.php?id_event=$id_event\"><img src='eliminar.bmp' width='14' height='14' border='0'></a>
+                    <a onclick=\"return confirmSubmit()\"href=\"elimEventoAB2.php?id_event=$id_event\"><img src='eliminar.bmp' width='14' height='14' border='0'></a>
 		                </center>
                     </td>
                     <td><center>
-                    <a href=\"actuConciertonew.php?id_event=$id_event\"><img src='actualiza.jpg' width='25' height='25' border='0'></a>
+                    <a href=\"actuEventonew.php?id_event=$id_event\"><img src='actualiza.jpg' width='25' height='25' border='0'></a>
                     </center></td>
 
 
