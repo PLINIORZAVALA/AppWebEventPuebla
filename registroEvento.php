@@ -38,11 +38,11 @@
                 <div class="form-group">
                     <label for="tipo_evento">Tipo de Evento</label>
                     <select id="tipo_evento" name="tipo_evento" required>
-                        <option value="familiares">Concierto</option>
-                        <option value="culturales">Teatros</option>
-                        <option value="deportivos">Deporte</option>
-                        <option value="deportivos">Familiares</option>
-                        <option value="deportivos">Especiales</option>
+                        <option value="familiares">concierto</option>
+                        <option value="culturales">teatros</option>
+                        <option value="deportivos">deportes</option>
+                        <option value="deportivos">familiares</option>
+                        <option value="deportivos">especiales</option>
                     </select>
                 </div>
                 <button class="submit-btn" type="submit">Registrar Evento</button>
