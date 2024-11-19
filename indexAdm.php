@@ -14,15 +14,9 @@
   <div id="menucontainer">
     <div id="menunav">
     <ul>
-        <li><a href="G_conciertos.php"><span>Conciertos</span></a></li>
-        <li><a href="G_teatro.php" ><span>Teatros</span></a></li>
-        <li><a href="G_deporte.php"><span>Deportes</span></a></li>
-        <li><a href="G_familiares.php"><span>Familiares</span></a></li>
-        <li><a href="G_especiales.php"><span>Especiales</span></a></li>
-        <li><a href="G_todos.php"><span>Todos</span></a></li>
-        <li><a href="G_altaRegistro.php"><span>Permiso Eventos</span></a></li>
-        <li><a href="G_users.php"><span>Usuarios</span></a></li>
-        
+        <li><a href="elimEventoAB.php" class="current"><span>Eventos</span></a></li>
+        <li><a href="#"><span>Permiso Eventos</span></a></li>
+        <li><a href="elimUserAB.php"><span>Usuarios</span></a></li>
       </ul>
     </div>
   </div>
@@ -129,7 +123,8 @@
       <p>.</p>
     </div>
   </div>
-  <div id="footer"> <a href="#">homepage</a> | <a href="mailto:denise@mitchinson.net">contact</a> | <a href="http://validator.w3.org/check?uri=referer">html</a> | <a href="http://jigsaw.w3.org/css-validator">css</a> | &copy; 2007 Anyone | Design by <a href="http://www.mitchinson.net"> www.mitchinson.net</a></div>
+  <div id="footer"> | &copy; 20024 Plmax | Design by <a href="#"> www </a></div>
+
 </div>
 </body>
 </html>

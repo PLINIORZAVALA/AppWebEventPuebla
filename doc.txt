@@ -4,5 +4,7 @@
  - Los botones ya dan la ruta pero no esta eliminando ni mostrando para actualizar
  - Se pudo solucionar ese problema de eliminar y actualizar
  - Se realizara los campos que utilizara el administrador con CRUD
- - Para la proxima sessión se buscara la parte de registro de evento por parte del usuario al sistema
+ - Priero se dara una mejor adaptabilidad al footer de la página
+ - Se creara el formulario para el registro de eventos
+ - 
  - 

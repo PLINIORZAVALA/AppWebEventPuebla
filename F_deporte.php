@@ -82,7 +82,8 @@
       <p>.</p>
     </div>
     </div>
-  <div id="footer"> <a href="#">Registrase</a> | <a href="mailto:denise@mitchinson.net">Iniciar Sesión</a> | <a href="http://validator.w3.org/check?uri=referer">html</a> | <a href="http://jigsaw.w3.org/css-validator">css</a> | &copy; 2007 Anyone | Design by <a href="http://www.mitchinson.net"> www.mitchinson.net</a></div>
+    <div id="footer"> <a href="#">Registrase</a> | <a href="tfmeur@gmail.com">Iniciar Sesión</a> | <a href="#">html</a> | &copy; 20024 Plmax | Design by <a href="#"> www </a>
+    </div>
 </div>
 </body>
 </html>

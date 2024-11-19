@@ -94,19 +94,50 @@ padding : 0 20px 0 0;
 width : auto;
 height : 33px;
 } 
-			/*FOOTER*/
+/* FOOTER */
 #footer { 
-clear : both;
-height : 50px;
-padding : 0;
-/*margin-bottom : 40px;*/
-margin-top : 60px;
-text-align : center;
-border-top : 5px solid #282C34;
-font : 73% Arial, "Trebuchet MS", Helvetica, Tahoma, sans-serif;
-background : #282C34;
-color : #555;
-} 
+    clear: both;
+    position: relative; /* Permite que se adapte al contenido */
+    width: 100%;
+    height: auto; /* Se ajusta dinámicamente al contenido */
+    padding: 25px 15px; /* Espaciado interno más generoso */
+    margin-top: 40px; /* Separación con el contenido principal */
+    text-align: center;
+    border-top: 5px solid #282C34;
+    font: 16px Arial, "Trebuchet MS", Helvetica, Tahoma, sans-serif; /* Tamaño de fuente más grande */
+    background: #282C34;
+    color: #bbb; /* Color más claro para mayor contraste */
+}
+
+/* Estilo para enlaces dentro del footer */
+#footer a {
+    color: #6C63FF; /* Color destacado */
+    text-decoration: none;
+    margin: 0 15px; /* Espaciado horizontal más amplio entre enlaces */
+    font-weight: bold;
+    font-size: 16px; /* Aumenta el tamaño de los enlaces */
+    transition: color 0.3s ease-in-out; /* Transición suave en hover */
+}
+
+#footer a:hover {
+    color: #00B4D8; /* Color más vivo en hover */
+    text-decoration: underline; /* Subrayado para dar énfasis */
+}
+
+/* Ajuste adicional para diseño responsivo */
+@media (max-width: 768px) {
+    #footer {
+        font-size: 14px; /* Incrementa ligeramente en pantallas pequeñas */
+        padding: 20px;
+    }
+
+    #footer a {
+        display: block; /* Los enlaces se apilan en pantallas pequeñas */
+        margin: 10px 0;
+        font-size: 14px; /* Ajusta el tamaño en pantallas pequeñas */
+    }
+}
+
 			/*TYPOGRAPHY*/
 h1 { 
 float : left;
