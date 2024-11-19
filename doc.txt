@@ -5,6 +5,6 @@
  - Se pudo solucionar ese problema de eliminar y actualizar
  - Se realizara los campos que utilizara el administrador con CRUD
  - Priero se dara una mejor adaptabilidad al footer de la página
- - Se creara el formulario para el registro de eventos
+ - Se creara el formulario para el registro de eventos(Pide iniciar sesion y solo inica con los roles de organizador y adminitrador)
  - 
  - 

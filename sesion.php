@@ -14,14 +14,14 @@
         </div>
         <div class="form-panel">
             <h2>Iniciar Sesión</h2>
-            <form action="validarUsuario.php" method="POST">
+            <form action="validarUsuario.php" method="POST" novalidate>
                 <div class="form-group">
                     <label for="email">Correo Electrónico</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
                 </div>
                 <div class="form-group">
                     <label for="password">Contraseña</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="password" name="password" required placeholder="Introduce tu contraseña">
                 </div>
                 <div class="checkbox-group">
                     <input type="checkbox" id="remember-me" name="remember">
@@ -29,7 +29,7 @@
                 </div>
                 <button class="submit-btn" type="submit">Iniciar sesión</button>
                 <div class="form-footer">
-                    <p>¿Nuevo en Ticketmaster? <a href="#">Crea una cuenta</a></p>
+                    <p>¿Nuevo en Ticketmaster? <a href="registro.php">Crea una cuenta</a></p>
                     <p><a href="#">Olvidé mi contraseña</a></p>
                 </div>
             </form>

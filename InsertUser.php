@@ -24,12 +24,12 @@ $hashed_password = password_hash($password, PASSWORD_BCRYPT);
 
 // Consulta preparada para insertar el nuevo usuario en la base de datos
 $stmt = mysqli_prepare($link, "INSERT INTO usuarios (nombre, email, contrasena, tipo_usuario, fecha_registro) VALUES (?, ?, ?, ?, NOW())");
-mysqli_stmt_bind_param($stmt, "ssss", $nombre_completo, $email, $hashed_password, $tipo_usuario);
+mysqli_stmt_bind_param($stmt, "ssss", $nombre_completo, $email, $password, $tipo_usuario);
 
 // Ejecutar la consulta
 if (mysqli_stmt_execute($stmt)) {
     echo "Registro exitoso. Redirigiendo a la página de inicio de sesión...";
-    header("Location: sesion.php");
+    header("Location: indexCliente.php");
     exit();
 } else {
     echo "Error en el registro: " . mysqli_stmt_error($stmt);

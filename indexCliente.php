@@ -17,7 +17,7 @@
         <li><a href="F_conciertos.php"><span>Conciertos</span></a></li>
         <li><a href="F_teatro.php" ><span>Teatros</span></a></li>
         <li><a href="F_deporte.php"><span>Deportes</span></a></li>
-        <li><a href="F_familiares.php" class="current"><span>Familiares</span></a></li>
+        <li><a href="F_familiares.php"><span>Familiares</span></a></li>
         <li><a href="F_especiales.php"><span>Especiales</span></a></li>
         <li><a href="F_todos.php" class="current"><span>Todos</span></a></li>
         
@@ -31,6 +31,16 @@
       <p></p>
 
       <?php
+        // Iniciar sesión
+        session_start();
+
+        // Verificar si el usuario ha iniciado sesión
+        if (!isset($_SESSION['id_usuario'])) {
+            // Redirigir al inicio de sesión si no está autenticado
+            header("Location: sesion.php");
+            exit();
+        }
+
         $link = mysqli_connect("localhost", "root", "", "event");
 
         if (!$link) {
@@ -42,21 +52,6 @@
             die('Error en la consulta: ' . mysqli_error($link));
         }
 
-        // Mostrar datos en una tabla
-        echo "<table border='1'>";
-        echo "<tr>
-                <th>ID Evento</th>
-                <th>Título</th>
-                <th>Descripción</th>
-                <th>Fecha del Evento</th>
-                <th>Hora del Evento</th>
-                <th>Ubicación</th>
-                <th>ID Usuario</th>
-                <th>Estado</th>
-                <th>Fecha de Creación</th>
-                <th>Tipo de Evento</th>
-                <th>Imagen</th>
-              </tr>";
 
         while ($ren = mysqli_fetch_array($resultado)) {
             $id_event = $ren['id_event'];
@@ -70,23 +65,7 @@
             $fecha_creacion = $ren['fecha_creacion'];
             $tipo_event = $ren['tipo_event'];
             $imagen = $ren['imagen'];
-
-            echo "<tr>";
-            echo "<td>$id_event</td>
-                  <td>$titulo</td>
-                  <td>$descripcion</td>
-                  <td>$fecha_evento</td>
-                  <td>$hora_evento</td>
-                  <td>$ubicacion</td>
-                  <td>$id_usuario</td>
-                  <td>$estado</td>
-                  <td>$fecha_creacion</td>
-                  <td>$tipo_event</td>";
-            echo "<td><a href='detalle_evento.php?id_event=$id_event'><img src='MisImagenes/$imagen' width='70' height='70'></a></td>";
-            echo "</tr>";
         }
-
-        echo "</table>";
 
         // Mostrar los datos en formato de tarjeta
         echo "<h2>Vista de Tarjetas de Eventos</h2>";
@@ -127,7 +106,7 @@
       <p>.</p>
     </div>
   </div>
-  <div id="footer"> <a href="#">Registrase</a> | <a href="tfmeur@gmail.com">Iniciar Sesión</a> | <a href="#">html</a> | <a href="#">css</a> | &copy; 20024 Plmax | Design by <a href="#"> www </a></div>
+  <div id="footer"> <a href="#">Registrase</a> | <a href="#">Iniciar Sesión</a> | <a href="registroEvento.php">Registrar Evento</a> | &copy; 20024 Plmax | Design by <a href="#"> </a>
   </div>
 </body>
 </html>

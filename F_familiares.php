@@ -81,7 +81,7 @@
       <p>.</p>
     </div>
   </div>
-  <div id="footer"> <a href="#">Registrase</a> | <a href="tfmeur@gmail.com">Iniciar Sesión</a> | <a href="#">html</a> | &copy; 20024 Plmax | Design by <a href="#"> www </a>
+  <div id="footer"> <a href="#">Registrase</a> | <a href="#">Iniciar Sesión</a> | <a href="registroEvento.php">Registrar Evento</a> | &copy; 20024 Plmax | Design by <a href="#"> </a>
   </div>
 </div>
 </body>
