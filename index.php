@@ -8,7 +8,7 @@
 <body>
 <div id="wrap">
   <div id="masthead">
-    <h1>Eventos Puebla </h1>
+    <h1>Jose Alberto</h1>
     <h2><a href="registro.php">Registrarse</a> | <a href="sesion.php">Iniciar Sesión</a> </h2>
   </div>
   <div id="menucontainer">
