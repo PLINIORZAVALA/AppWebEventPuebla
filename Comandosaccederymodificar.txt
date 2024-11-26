@@ -1,0 +1,14 @@
+Paso 1:confirmar solicitud en correo
+Paso 2:git remote add origin https://github.com/PLINIORZAVALA/AppWebEventPuebla.git
+paso 3:git remote -v
+paso 4:Realizar el primer push:git push -u origin main
+con esto valido que tengo permisos para modificar el Git
+Cambios en el Repositorio
+
+
+paso 1:Git init-Para inicializar 
+paso 2:git status-Para ver los cambios que se realizo
+paso 3: git add -A -Actualizar todos los cambis que existan
+paso 4: git commit -m "Nombre de cambio"-para saber que cambio se realizo
+paso 5:git push - cargar los cambios del git
+paso 6: git status -verificar que los cambios estan subidos

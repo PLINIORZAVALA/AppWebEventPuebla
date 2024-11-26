@@ -1,0 +1,10 @@
+12/11/24
+ - Se realizara el avance de los permiso que debe de tener como administrador de los accesos de datos que tendra
+ - Para la proxima sesion añadir las funciones de CRUD al administrador y para la proxima el registro de eventos
+ - Los botones ya dan la ruta pero no esta eliminando ni mostrando para actualizar
+ - Se pudo solucionar ese problema de eliminar y actualizar
+ - Se realizara los campos que utilizara el administrador con CRUD
+ - Priero se dara una mejor adaptabilidad al footer de la página
+ - Se creara el formulario para el registro de eventos(Pide iniciar sesion y solo inica con los roles de organizador y adminitrador)
+ - 
+ - 
