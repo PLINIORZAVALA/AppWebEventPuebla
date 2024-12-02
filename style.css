@@ -3,7 +3,7 @@ margin : 0;
 padding : 0;
 } 
 body { 
-font : 50% Arial, "Trebuchet MS", Helvetica, Tahoma, sans-serif;
+font : 50% Merriweather, Arial, "Trebuchet MS", Helvetica, Tahoma, sans-serif;
 background : #ccc;
 color : #555;
 } 
@@ -16,7 +16,7 @@ background : #fff url(images/wrap_bg.jpg) repeat-x;
 height : 95px;
 padding : 0;
 margin-bottom : 0;
-background: #282c34
+background: #0c1321
 } 
 			/*MAIN CONTAINER*/
 #container { 
@@ -31,7 +31,7 @@ line-height : 1.8em;
 position : relative;
 height : 10 55px;
 color : #e0e0e0;
-background : #282c34;
+background : #a5c92e;
 width : 100%;
 font-family : Helvetica, Arial, Verdana, sans-serif;
 } 
@@ -63,10 +63,11 @@ padding : 0 1px;
 #menunav ul li a { 
 display : block;
 float : left;
-color : #e7e7eb;
+color : #1313ad;
 text-decoration : none;
 padding : 0 0 0 20px;
 height : 33px;
+font-family: Merriweather, Arial, sans-serif;
 } 
 #menunav ul li a span { 
 padding : 12px 20px 0 0;
@@ -85,7 +86,7 @@ width : auto;
 cursor : pointer;
 } 
 #menunav ul li a.current, #menunav ul li a.current:hover { 
-color : #fff;
+color : #17b63f;
 line-height : 275%;
 } 
 #menunav ul li a.current span { 
@@ -103,9 +104,9 @@ height : 33px;
     padding: 25px 15px; /* Espaciado interno más generoso */
     margin-top: 40px; /* Separación con el contenido principal */
     text-align: center;
-    border-top: 5px solid #282C34;
+    border-top: 5px solid #184cb3;
     font: 16px Arial, "Trebuchet MS", Helvetica, Tahoma, sans-serif; /* Tamaño de fuente más grande */
-    background: #282C34;
+    background: #1a3770;
     color: #bbb; /* Color más claro para mayor contraste */
 }
 
@@ -143,7 +144,7 @@ h1 {
 float : left;
 margin : 0;
 padding : 20px 0 20px 25px;
-font : 150% "Trebuchet MS", Helvetica, Arial, Tahoma, sans-serif;
+font : 150% Merriweather, "Trebuchet MS", Helvetica, Arial, Tahoma, sans-serif;
 letter-spacing : 5px;
 color : #fff;
 } 
@@ -151,7 +152,7 @@ h2 {
 float : right;
 margin : 15px;
 padding : 5px 20px 20px 0;
-font : 90% "Trebuchet MS", Helvetica, Arial, Tahoma, sans-serif;
+font : 90% Merriweather, "Trebuchet MS", Helvetica, Arial, Tahoma, sans-serif;
 letter-spacing : 4px;
 color : #fafafa;
 } 
@@ -159,7 +160,7 @@ h3 {
 margin : 0;
 padding : 20px 0 20px 0;
 border-bottom : 1px solid #aaa;
-font : 150% "Trebuchet MS", Helvetica, Arial, Tahoma, sans-serif;
+font : 150% Merriweather, "Trebuchet MS", Helvetica, Arial, Tahoma, sans-serif;
 text-transform : uppercase;
 letter-spacing : 3px;
 color : #007BFF;

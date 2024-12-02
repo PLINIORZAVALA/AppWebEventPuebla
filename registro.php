@@ -6,11 +6,24 @@
     <title>Registro</title>
     <link rel="stylesheet" href="sesionStyle.css">
 </head>
+<style>
+        .regresar-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 15px;
+            background-color: #add8e6; /* Color azul claro */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 <body>
     <div class="container">
         <div class="left-panel">
-            <h2>Pase de acceso total</h2>
-            <p>Esto es todo: millones de eventos en vivo, alertas actualizadas de tus artistas y equipos favoritos y, por supuesto, emisión de boletos siempre segura.</p>
+            <h2>Los mejores Eventos en Puebla</h2>
+            <p></p>
         </div>
         <div class="form-panel">
             <h2>Registrarse</h2>
@@ -33,11 +46,11 @@
                 </div>
                 <button class="submit-btn" type="submit">Siguiente</button>
                 <div class="form-footer">
-                    <p>Al continuar, aceptas los <a href="#">términos</a> y la <a href="#">Política de Privacidad</a>.</p>
-                    <p>¿Ya tienes cuenta? <a href="#">Inicia sesión</a></p>
                 </div>
             </form>
         </div>
     </div>
+    <button class="regresar-btn" onclick="window.history.back();">Regresar</button>
+
 </body>
 </html>

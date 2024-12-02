@@ -2,20 +2,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Aplicacion de eventos puebla</title>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="style1.css" rel="stylesheet" type="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 </head>
 <body>
 <div id="wrap">
   <div id="masthead">
     <h1>Eventos Puebla </h1>
-    <h2><a href="registro.php">Registrarse</a> | <a href="sesion.php">Iniciar Sesión</a> </h2>
+    <h2><a href="index.php">Cerrar Sesión</a> </h2>
   </div>
   <div id="menucontainer">
     <div id="menunav">
     <ul>
         <li><a href="elimEventoAB.php" class="current"><span>Eventos</span></a></li>
-        <li><a href="#"><span>Permiso Eventos</span></a></li>
         <li><a href="elimUserAB.php"><span>Usuarios</span></a></li>
       </ul>
     </div>
@@ -123,8 +122,9 @@
       <p>.</p>
     </div>
   </div>
-  <div id="footer"> | &copy; 20024 Plmax | Design by <a href="#"> www </a></div>
+  
 
 </div>
 </body>
 </html>
+ 

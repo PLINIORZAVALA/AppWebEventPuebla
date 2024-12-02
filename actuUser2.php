@@ -20,15 +20,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nombre = isset($_POST['nombre']) ? mysqli_real_escape_string($link, $_POST['nombre']) : '';
     $email = isset($_POST['email']) ? mysqli_real_escape_string($link, $_POST['email']) : '';
     $contrasena = isset($_POST['contrasena']) ? mysqli_real_escape_string($link, $_POST['contrasena']) : '';
+    $tipo_usuario = isset($_POST['tipo_usuario']) ? mysqli_real_escape_string($link, $_POST['tipo_usuario']) : '';
 
     // Verificar que los campos obligatorios no estén vacíos
-    if ($id_usuario && $nombre && $email && $contrasena) {
+    if ($id_usuario && $nombre && $email && $contrasena && $tipo_usuario) {
         // Actualizar los datos del usuario
-        $query = "UPDATE usuarios SET nombre = ?, email = ?, contrasena = ? WHERE id_usuario = ?";
+        $query = "UPDATE usuarios SET nombre = ?, email = ?, contrasena = ?, tipo_usuario = ? WHERE id_usuario = ?";
         $stmt = mysqli_prepare($link, $query);
 
         if ($stmt) {
-            mysqli_stmt_bind_param($stmt, "sssi", $nombre, $email, $contrasena, $id_usuario);
+            mysqli_stmt_bind_param($stmt, "ssssi", $nombre, $email, $contrasena, $tipo_usuario, $id_usuario);
 
             if (mysqli_stmt_execute($stmt)) {
                 // Redirigir al usuario a otra página después de la actualización
@@ -50,7 +51,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 // Cerrar la conexión
 mysqli_close($link);
 ?>
-
 
 </body>
 </html>

@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar Evento</title>
     <link rel="stylesheet" href="sesionStyle.css">
+    <style>
+        .regresar-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 15px;
+            background-color: #add8e6; /* Color azul claro */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -41,13 +54,14 @@
                         <option value="familiares">concierto</option>
                         <option value="culturales">teatros</option>
                         <option value="deportivos">deportes</option>
-                        <option value="deportivos">familiares</option>
-                        <option value="deportivos">especiales</option>
+                        <option value="familiares">familiares</option>
+                        <option value="especiales">especiales</option>
                     </select>
                 </div>
                 <button class="submit-btn" type="submit">Registrar Evento</button>
             </form>
         </div>
     </div>
+    <button class="regresar-btn" onclick="window.history.back();">Regresar</button>
 </body>
 </html>

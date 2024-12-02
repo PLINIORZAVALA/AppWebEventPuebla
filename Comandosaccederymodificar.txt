@@ -10,5 +10,5 @@ paso 1:Git init-Para inicializar
 paso 2:git status-Para ver los cambios que se realizo
 paso 3: git add -A -Actualizar todos los cambis que existan
 paso 4: git commit -m "Nombre de cambio"-para saber que cambio se realizo
-paso 5:git push - cargar los cambios del git
+paso 5: git pull origin master - cargar los cambios del git
 paso 6: git status -verificar que los cambios estan subidos

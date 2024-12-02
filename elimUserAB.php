@@ -2,8 +2,9 @@
 <html lang="es">
 <head>
     <title>Aplicación de eventos Puebla</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style1.css" rel="stylesheet" type="text/css" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
 
     <script language="JavaScript">
     function confirmSubmit() {
@@ -15,15 +16,15 @@
 </head>
 <body>
 
-<h1> Bienvenido adminitrador</h1> 
+
 
 <div id="wrap">
-  <div id="masthead"></div>
+  <div id="masthead"> <h1> Bienvenido administrador</h1> </div>
+   
   <div id="menucontainer">
     <div id="menunav">
       <ul>
         <li><a href="elimEventoAB.php" class="current"><span>Eventos</span></a></li>
-        <li><a href="#"><span>Permiso Eventos</span></a></li>
         <li><a href="elimUserAB.php"><span>Usuarios</span></a></li>
       </ul>
     </div>
@@ -92,11 +93,7 @@
     </div>
   </div>
   <div id="footer"> 
-    <a href="#">Registrarse</a> | 
-    <a href="mailto:denise@mitchinson.net">Iniciar Sesión</a> | 
-    <a href="http://validator.w3.org/check?uri=referer">html</a> | 
-    <a href="http://jigsaw.w3.org/css-validator">css</a> | 
-    &copy; 2007 Anyone | Design by <a href="http://www.mitchinson.net"> www.mitchinson.net</a>
+    <a href="index.php">Cerrar Sesión</a> 
   </div>
 </div>
 </body>

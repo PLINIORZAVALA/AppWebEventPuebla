@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Aplicacion de eventos puebla</title>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="style1.css" rel="stylesheet" type="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 </head>
 <body>
 <div id="wrap">
   <div id="masthead">
-    <h1>Eventos Puebla </h1>
+  <a href="index.php"><h1>Eventos puebla</h1></a>
     <h2><a href="registro.php">Registrarse</a> | <a href="sesion.php">Iniciar Sesión</a> </h2>
   </div>
   <div id="menucontainer">

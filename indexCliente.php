@@ -1,15 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Aplicacion de eventos puebla</title>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<title></title>
+<link href="style1.css" rel="stylesheet" type="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 </head>
 <body>
 <div id="wrap">
   <div id="masthead">
     <h1>Eventos Puebla </h1>
-    <h2><a href="registro.php">Registrarse</a> | <a href="sesion.php">Iniciar Sesión</a> </h2>
+    <h2><a href="Salir.php">Cerrar Sesión</a></h2>
   </div>
   <div id="menucontainer">
     <div id="menunav">
@@ -26,7 +26,7 @@
   </div>
   <div id="container">
     <div id="content">
-      <h3>Bienvenido Cliente</h3>
+      <h3>Bienvenido</h3>
       <p>&nbsp;</p>
       <p></p>
 
@@ -106,7 +106,7 @@
       <p>.</p>
     </div>
   </div>
-  <div id="footer"> <a href="#">Registrase</a> | <a href="#">Iniciar Sesión</a> | <a href="registroEvento.php">Registrar Evento</a> | &copy; 20024 Plmax | Design by <a href="#"> </a>
+  <div id="footer"><a href="registroEvento.php">Registrar Evento</a> | &copy; 20024 Plmax | Design by <a href="#"> </a>
   </div>
 </body>
 </html>

@@ -27,7 +27,6 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `administracion_eventos`
 --
 
-DROP TABLE IF EXISTS `administracion_eventos`;
 CREATE TABLE IF NOT EXISTS `administracion_eventos` (
   `id_administracion` int NOT NULL AUTO_INCREMENT,
   `id_evento` int NOT NULL,
@@ -37,8 +36,8 @@ CREATE TABLE IF NOT EXISTS `administracion_eventos` (
   `comentario_admin` text,
   PRIMARY KEY (`id_administracion`),
   KEY `id_evento` (`id_evento`),
-  KEY `id_admin` (`id_user`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  KEY `id_user` (`id_user`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `administracion_eventos`
@@ -54,7 +53,7 @@ INSERT INTO `administracion_eventos` (`id_administracion`, `id_evento`, `id_user
 -- Estructura de tabla para la tabla `eventos`
 --
 
-DROP TABLE IF EXISTS `eventos`;
+
 CREATE TABLE IF NOT EXISTS `eventos` (
   `id_event` int NOT NULL AUTO_INCREMENT,
   `titulo` varchar(128) NOT NULL,
@@ -68,8 +67,8 @@ CREATE TABLE IF NOT EXISTS `eventos` (
   `imagen` varchar(64) DEFAULT NULL,
   `tipo_event` varchar(64) DEFAULT NULL,
   PRIMARY KEY (`id_event`),
-  KEY `id_organizador` (`id_usuario`)
-) ENGINE=MyISAM AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  KEY `id_usuario` (`id_usuario`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `eventos`
@@ -107,7 +106,6 @@ INSERT INTO `eventos` (`id_event`, `titulo`, `descripcion`, `fecha_evento`, `hor
 -- Estructura de tabla para la tabla `usuarios`
 --
 
-DROP TABLE IF EXISTS `usuarios`;
 CREATE TABLE IF NOT EXISTS `usuarios` (
   `id_usuario` int NOT NULL AUTO_INCREMENT,
   `nombre` varchar(64) NOT NULL,
@@ -117,9 +115,9 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `fecha_registro` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_usuario`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
+-- Passw0rd!8
 -- Volcado de datos para la tabla `usuarios`
 --
 
