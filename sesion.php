@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                 // Redirigir según el tipo de usuario
                 if ($row["tipo_usuario"] == "administrador") {
-                    header("Location: indexAdm.php");
+                    header("Location: elimEventoAB.php");
                 } else {
                     header("Location: indexCliente.php");
                 }
