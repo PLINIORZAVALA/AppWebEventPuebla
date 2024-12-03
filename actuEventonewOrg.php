@@ -1,30 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Aplicación de eventos Puebla</title>
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-
-<h2>Actualizar un registro</h2> 
-
 <div id="wrap">
-    <div id="masthead"></div>
-    <div id="menucontainer">
-        <div id="menunav">
-            <ul>
-            <li><a href="elimEventoAB.php" class="current"><span>Eventos</span></a></li>
-            <li><a href="#"><span>Permiso Eventos</span></a></li>
-            <li><a href="elimUserAB.php"><span>Usuarios</span></a></li>
-            </ul>
-        </div>
     </div>
     <div id="container">
         <div id="content">
-            <h3>Conciertos</h3>
-
             <?php
                 // Conexión a la base de datos
                 $link = mysqli_connect("localhost", "root", "", "event");
@@ -64,13 +48,6 @@
             ?>
 
         </div>
-    </div>
-    <div id="footer">
-        <a href="#">Registrarse</a> |
-        <a href="mailto:denise@mitchinson.net">Iniciar Sesión</a> |
-        <a href="http://validator.w3.org/check?uri=referer">HTML</a> |
-        <a href="http://jigsaw.w3.org/css-validator">CSS</a> |
-        &copy; 2007 Anyone | Design by <a href="http://www.mitchinson.net">www.mitchinson.net</a>
     </div>
 </div>
 
