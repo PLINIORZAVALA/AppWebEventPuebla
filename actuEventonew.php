@@ -11,7 +11,6 @@
 
     <div id="container">
         <div id="content">
-            <h3>Conciertos</h3>
 
             <?php
                 // Conexión a la base de datos
