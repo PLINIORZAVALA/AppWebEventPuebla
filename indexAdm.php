@@ -9,7 +9,6 @@
 <div id="wrap">
   <div id="masthead">
   <div id="masthead"> <h1> Bienvenido administrador</h1> </div>
-    <h2><a href="index.php">Cerrar Sesión</a> </h2>
   </div>
   <div id="menucontainer">
     <div id="menunav">
@@ -86,6 +85,8 @@
         mysqli_close($link);
       ?>
 
+      
+
 
 
       <p>&nbsp;</p>
@@ -96,7 +97,9 @@
       <p>.</p>
     </div>
   </div>
-  
+  <div id="footer"> 
+    <a href="index.php">Cerrar Sesión</a> 
+  </div>
 
 </div>
 </body>
