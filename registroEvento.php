@@ -63,7 +63,7 @@
             color: #333;
         }
 
-        .form-group input {
+        .form-group input, .form-group select, .form-group textarea {
             width: 100%;
             padding: 10px;
             font-size: 1rem;
@@ -73,10 +73,14 @@
             margin-top: 5px;
         }
 
-        .form-group input:focus {
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
             border-color: #2980b9;
             outline: none;
             background-color: #fff;
+        }
+
+        .form-group textarea {
+            height: 120px;
         }
 
         .submit-btn {
@@ -110,15 +114,17 @@
         .regresar-btn:hover {
             background-color: #e67e22;
         }
+
     </style>
 </head>
 <body>
+
     <div class="container">
         <div class="form-panel">
             <h2>Registrar Evento</h2>
             <form action="InsertEvent.php" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label for="titulo">Título</label>
+                    <label for="titulo">Título del Evento</label>
                     <input type="text" id="titulo" name="titulo" required>
                 </div>
                 <div class="form-group">
@@ -145,16 +151,18 @@
                     <label for="tipo_evento">Tipo de Evento</label>
                     <select id="tipo_evento" name="tipo_evento" required>
                         <option value="concierto">Concierto</option>
-                        <option value="teatros">Teatro</option>
-                        <option value="deportivos">Deporte</option>
-                        <option value="familiares">Familiares</option>
-                        <option value="especiales">Especiales</option>
+                        <option value="teatro">Teatro</option>
+                        <option value="deportivo">Deportivo</option>
+                        <option value="familiar">Familiar</option>
+                        <option value="especial">Especial</option>
                     </select>
                 </div>
                 <button class="submit-btn" type="submit">Registrar Evento</button>
             </form>
         </div>
     </div>
+
     <button class="regresar-btn" onclick="window.history.back();">Regresar</button>
+
 </body>
 </html>
