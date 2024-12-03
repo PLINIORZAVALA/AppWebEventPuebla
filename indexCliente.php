@@ -106,7 +106,7 @@
       <p>.</p>
     </div>
   </div>
-  <div id="footer"><a href="registroEvento.php">Registrar Evento</a> | &copy; 20024 Plmax | Design by <a href="#"> </a>
+  <div id="footer"><a href="registroEvento.php">Registrar Evento</a> <a href="#"> </a>
   </div>
 </body>
 </html>

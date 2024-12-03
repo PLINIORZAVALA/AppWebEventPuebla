@@ -8,7 +8,7 @@
 <body>
 <div id="wrap">
   <div id="masthead">
-    <h1>Eventos Puebla </h1>
+  <div id="masthead"> <h1> Bienvenido administrador</h1> </div>
     <h2><a href="index.php">Cerrar Sesión</a> </h2>
   </div>
   <div id="menucontainer">
@@ -82,32 +82,6 @@
         }
 
         echo "</table>";
-
-        // Mostrar los datos en formato de tarjeta
-        echo "<h2>Vista de Tarjetas de Eventos</h2>";
-
-        mysqli_data_seek($resultado, 0); // Reiniciar puntero para reutilizar el resultado en el formato de tarjetas
-
-        while ($ren = mysqli_fetch_array($resultado)) {
-            $id_event = $ren['id_event'];
-            $titulo = $ren['titulo'];
-            $descripcion = $ren['descripcion'];
-            $fecha_evento = $ren['fecha_evento'];
-            $hora_evento = $ren['hora_evento'];
-            $ubicacion = $ren['ubicacion'];
-            $imagen = $ren['imagen'];
-            
-            echo "<div class='event-card' style='border: 1px solid #ddd; padding: 10px; width: 200px; margin: 10px; display: inline-block; text-align: center;'>";
-            echo "<img src='MisImagenes/$imagen' alt='Imagen del evento' style='width: 100%; height: auto;'>";
-            echo "<div class='event-info'>";
-            echo "<p class='event-title' style='font-weight: bold;'>$titulo</p>";
-            echo "<p class='event-description'>$descripcion</p>";
-            echo "<p class='event-date'>$fecha_evento a las $hora_evento</p>";
-            echo "<p class='event-location'>Ubicación: $ubicacion</p>";
-            echo "<p class='event-category'>Categoría: $tipo_event</p>";
-            echo "</div>";
-            echo "</div>";
-        }
 
         mysqli_close($link);
       ?>

@@ -66,7 +66,7 @@ mysqli_stmt_bind_param($stmt, "sssssssss", $titulo, $descripcion, $fecha_evento,
 
 // Ejecutar la consulta
 if (mysqli_stmt_execute($stmt)) {
-    echo "<script>alert('Evento registrado exitosamente.'); window.location.href = 'index.php';</script>";
+    echo "<script>alert('Evento registrado exitosamente.'); window.location.href = 'indexCliente.php';</script>";
     exit();
 } else {
     echo "<script>alert('Error en el registro del evento.');</script>";
