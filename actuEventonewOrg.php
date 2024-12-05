@@ -129,7 +129,9 @@
                     echo "<label for='hora_evento'>Hora del evento:</label><input type='time' name='hora_evento' value='" . htmlspecialchars($ren['hora_evento']) . "' required>";
                     echo "<label for='ubicacion'>Ubicación:</label><input type='text' name='ubicacion' value='" . htmlspecialchars($ren['ubicacion']) . "' required>";
                     echo "<label for='estado'>Estado:</label><input type='text' name='estado' value='" . htmlspecialchars($ren['estado']) . "' required>";
-                    echo "<label for='imagen'>Imagen:</label><input type='text' name='imagen' value='" . htmlspecialchars($ren['imagen']) . "' required>";
+                    
+                    echo "<label for='imagen'>Imagen:</label><input type='file' name='imagen' accept='image/*' required><br>";
+                    
                     echo "<label for='tipo_event'>Tipo de evento:</label><input type='text' name='tipo_event' value='" . htmlspecialchars($ren['tipo_event']) . "' required>";
                     echo "<input type='hidden' name='id_event' value='$id'>";
                     echo "<input type='submit' value='Actualizar'>";
